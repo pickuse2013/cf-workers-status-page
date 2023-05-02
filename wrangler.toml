@@ -4,13 +4,20 @@ account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
+main = "./index.js"
 
-[triggers]
-crons = ["* * * * *"]
+[build]
+command = "npm run build"
+#account_id = ""
+#type = "webpack"
+#webpack_config = "node_modules/flareact/webpack"
+
+#[triggers]
+#crons = ["* * * * *"]
 
 [site]
 bucket = "out"
-entry-point = "./"
+#entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
